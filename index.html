@@ -1,1 +1,128 @@
-Hello World
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meine Professionelle Web-Präsenz</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Willkommen auf meiner persönlichen Seite</h1>
+        <p>Ein Überblick über meine Fähigkeiten, Erfahrungen und Projekte</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> Über mich</a></li>
+            <li><a href="#technologies"><i class="fas fa-cogs"></i> Technologien</a></li>
+            <li><a href="#projects"><i class="fab fa-github"></i> Projekte</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section-about">
+        <h2>Über mich</h2>
+        <div class="about-content">
+            <img src="./assets/IMG_20250324_100558.jpg_compressed.JPEG" alt="Mein Bild">
+            <div>
+                <h3>Hallo, ich bin Nivisan Jeyananthan!</h3>
+                <p>
+                    Ich bin ein leidenschaftlicher Entwickler mit Erfahrung in einer Vielzahl von Technologien und Programmiersprachen.
+                    Meine Leidenschaft für Softwareentwicklung und innovative Lösungen treibt mich immer an, neue Dinge zu lernen.
+                </p>
+                <p>Ich habe umfangreiche Kenntnisse in Bereichen wie Webentwicklung, App-Entwicklung, Software-Engineering und IT-Sicherheit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="section-technologies">
+        <h2>Technologien & Fähigkeiten</h2>
+        <div class="tech-categories">
+            
+            <!-- Kategorie 1: Backend-Technologien -->
+            <div class="tech-category">
+                <h3>Backend-Entwicklung</h3>
+                <ul>
+                    <li><i class="fab fa-dotnet"></i> .NET (C#) - <span>Erfahren</span></li>
+                    <li><i class="fab fa-linux"></i> Linux - <span>Sehr gut</span></li>
+                    <li><i class="fas fa-database"></i> MSSQL - <span>Fortgeschritten</span></li>
+                    <li><i class="fab fa-docker"></i> Docker - <span>Sehr gut</span></li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+                <p class="progress-text">Erfahren (85%)</p>
+            </div>
+
+            <!-- Kategorie 2: Frontend-Technologien -->
+            <div class="tech-category">
+                <h3>Frontend-Entwicklung</h3>
+                <ul>
+                    <li><i class="fab fa-react"></i> React - <span>Experte</span></li>
+                    <li><i class="fab fa-js-square"></i> JavaScript (ES6+) - <span>Experte</span></li>
+                    <li><i class="fab fa-node"></i> Node.js - <span>Erfahren</span></li>
+                    <li><i class="fab fa-css3-alt"></i> CSS3 & HTML5 - <span>Sehr gut</span></li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <p class="progress-text">Experte (90%)</p>
+            </div>
+
+            <!-- Kategorie 3: Weitere Technologien -->
+            <div class="tech-category">
+                <h3>Weitere Technologien</h3>
+                <ul>
+                    <li><i class="fas fa-mobile-alt"></i> Android - <span>Erfahren</span></li>
+                    <li><i class="fas fa-cogs"></i> Unrean Engine 5 - <span>Gut</span></li>
+                    <li><i class="fas fa-hat-wizard"></i> Blazor - <span>Gut</span></li>
+                    <li><i class="fas fa-lock"></i> Cybersecurity - <span>Fortgeschritten</span></li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+                <p class="progress-text">Fortgeschritten (70%)</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Projekte Sektion -->
+<section id="projects" class="section-projects">
+    <h2>Meine GitHub-Projekte</h2>
+    <div class="projects-container">
+    </div>
+</section>
+
+    <!-- Call-to-Action -->
+    <section>
+        <div class="cta-buttons">
+            <a href="#contact" class="cta-button">Kontakt aufnehmen</a>
+            <a href="#about" class="cta-button">Mehr erfahren</a>
+        </div>
+    </section>
+
+    <!-- Kontakt Sektion -->
+    <section id="contact" class="section-contact">
+        <h2>Kontakt</h2>
+        <p>Sie können mich über die folgenden Kanäle erreichen:</p>
+        <div>
+            <p><strong>E-Mail:</strong> nivisanjeyananthan@duck.com</p>
+        </div>
+        <br>
+        <a href="mailto:nivisanjeyananthan@duck.com" class="btn-primary">Schreib mir eine E-Mail</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Nivisan Jeyananthan. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <button class="dark-mode-toggle">🌙</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
