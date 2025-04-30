@@ -114,20 +114,26 @@ filterInput.addEventListener('input', (e) => {
 
 const progressBars = document.querySelectorAll('.progress');
 
+// Funktion, um Fortschrittsbalken zu animieren
 const animateProgressBars = () => {
     progressBars.forEach(bar => {
-        const barWidth = bar.getAttribute('style').match(/width: (\d+)%/)[1];
-        bar.style.width = '0';
-        bar.style.transition = 'width 1s ease-in-out';
+        const barWidth = bar.getAttribute('style').match(/width: (\d+)%/)[1]; // Extrahiere die Breite
         const barPosition = bar.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.3;
-        if (barPosition < screenPosition) {
+
+        // Überprüfe, ob die Fortschrittsbalken im Viewport sichtbar sind
+        if (barPosition < screenPosition && !bar.classList.contains('animated')) {
             bar.style.width = `${barWidth}%`;
+            bar.classList.add('animated'); // Markiere die Balken als animiert
         }
     });
 };
 
+// Event-Listener für das Scrollen
 window.addEventListener('scroll', animateProgressBars);
+
+// Initialisiere die Animation beim Laden der Seite
+document.addEventListener('DOMContentLoaded', animateProgressBars);
 
 const contactForm = document.querySelector('#contact-form'); // Beispiel-ID
 if (contactForm) {

@@ -331,13 +331,17 @@ nav a:hover i {
     justify-items: center;
 }
 
+/* Projektkarten Styling */
 .project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    background-color: #fff; /* Weißer Hintergrund für die Karte */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für die Karte */
+    overflow: hidden; /* Verhindert, dass Inhalte über die Karte hinausgehen */
     width: 100%;
     max-width: 350px;
+    display: flex;
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    justify-content: space-between; /* Platz zwischen den Elementen */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
 }
@@ -349,12 +353,13 @@ nav a:hover i {
 
 .project-info {
     padding: 20px;
+    flex-grow: 1; /* Lässt den Textbereich wachsen, um den Platz auszufüllen */
 }
 
 .project-info h3 {
-    font-size: 1.8em;
+    font-size: 2.2em; /* Größere Schriftgröße für den Titel */
     margin-bottom: 10px;
-    color: #007BFF;
+    color: #007BFF; /* Blau wie vorher */
 }
 
 .project-description {
@@ -365,24 +370,24 @@ nav a:hover i {
 }
 
 .project-links {
-    background-color: #007BFF;
+    background-color: #007BFF; /* Blaue Hintergrundfarbe für den Button-Bereich */
     padding: 20px;
     text-align: center;
 }
 
 .github-link {
     font-size: 1.2em;
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Weißer Text */
+    text-decoration: none; /* Entfernt die Unterstreichung */
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #333;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px; /* Innenabstand für den Button */
+    border-radius: 5px; /* Abgerundete Ecken für den Button */
+    background-color: #333; /* Schwarzer Hintergrund */
+    transition: background-color 0.3s ease; /* Animation für Hover-Effekt */
 }
 
 .github-link:hover {
-    background-color: #0056b3;
+    background-color: #000; /* Dunkleres Schwarz beim Hover */
 }
 
 .github-link i {
