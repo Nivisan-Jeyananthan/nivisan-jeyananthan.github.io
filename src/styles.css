@@ -416,3 +416,182 @@ body.dark-mode .github-link {
 body.dark-mode .github-link:hover {
     background-color: #333;
 }
+
+/* Styling für die Werdegang-Sektion */
+.section-career {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-top: 2px solid #007BFF;
+}
+
+.section-career h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.career-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.career-category {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.career-category h3 {
+    font-size: 1.8em;
+    color: #007BFF;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.career-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.career-category ul li {
+    margin-bottom: 20px;
+}
+
+.career-category ul li strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.career-category ul li em {
+    font-style: italic;
+    color: #555;
+}
+
+.career-category ul li p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Dark Mode Anpassungen */
+body.dark-mode .section-career {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-mode .career-category {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .career-category h3 {
+    color: #66ccff;
+    border-bottom-color: #66ccff;
+}
+
+body.dark-mode .career-category ul li strong {
+    color: #fff;
+}
+
+body.dark-mode .career-category ul li em {
+    color: #aaa;
+}
+
+body.dark-mode .career-category ul li p {
+    color: #ccc;
+}
+
+/* Zurück nach oben Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Filterfeld für Projekte */
+.project-filter {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.project-filter:focus {
+    border-color: #0056b3;
+}
+
+/* Sprachkenntnisse Styling */
+.language-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-list li {
+    margin-bottom: 20px;
+}
+
+.language-list span {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.language-list span i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    margin: 5px 0;
+}
+
+.progress {
+    background: #007BFF;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
