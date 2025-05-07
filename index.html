@@ -1,236 +1,101 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meine Professionelle Web-Präsenz</title>
-    <link rel="stylesheet" href="./src/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mein Portfolio</title>
+
+  <!-- Skripte -->
+  <script defer src="./src/script.js"></script>
+
+  <script defer src="./src/components/layout/Header.js"></script>
+  <script defer src="./src/components/layout/Footer.js"></script>
+  <script defer src="./src/components/layout/Navigation.js"></script>
+  <script defer src="./src/components/layout/Content.js"></script>
+
+  <script defer src="./src/components/ExpirienceTimeline.js"></script>
+  <script defer src="./src/components/ExpirienceItem.js"></script>
+
+  <script defer src="./src/components/CareerCategory.js"></script>
+  <script defer src="./src/components/CareerItem.js"></script>
+  <script defer src="./src/components/CareerTimeline.js"></script>
+
+
+  <script defer src="./src/components/LanguageSkills.js"></script>
+  <script defer src="./src/components/SkillItem.js"></script>
+  <script defer src="./src/components/SkillCard.js"></script>
+
+  <script defer src="./src/components/ProjectCard.js"></script>
+  <script defer src="./src/components/ProjectItem.js"></script>
 </head>
 <body>
+  <!-- Header -->
+  <app-header></app-header>
 
-    <header>
-        <h1>Willkommen auf meiner persönlichen Seite</h1>
-        <p>Ein Überblick über meine Fähigkeiten, Erfahrungen und Projekte</p>
-    </header>
+  <!-- Navigation -->
+  <app-navigation></app-navigation>
 
-    <nav>
-        <ul>
-            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fas fa-user"></i> Über mich</a></li>
-            <li><a href="#technologies"><i class="fas fa-cogs"></i> Technologien</a></li>
-            <li><a href="#projects"><i class="fab fa-github"></i> Projekte</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Kontakt</a></li>
-        </ul>
-    </nav>
+  <!-- Hauptinhalt -->
+  <main>
+    <app-content>
+      <!-- Fähigkeiten -->
+      <skills-card overall="85%" width="85%" slot="skills">
+        <skill-item name=".NET (C#)" level="Sehr gut" icon="fa-brands fa-microsoft"></skill-item>
+        <skill-item name="Linux" level="Sehr gut" icon="fa-brands fa-linux"></skill-item>
+        <skill-item name="MSSQL" level="Fortgeschritten" icon="fa-solid fa-database"></skill-item>
+        <skill-item name="Docker" level="Sehr gut" icon="fa-brands fa-docker"></skill-item>
+      </skills-card>
 
-    <section id="about" class="section-about">
-        <div class="about-content">
-            <img src="./assets/IMG_20250324_100558.jpg_compressed.JPEG" alt="Mein Bild">
-            <div>
-                <h3>Hallo, ich bin Nivisan Jeyananthan!</h3>
-                <p>
-                    Ich bin ein engagierter und erfahrener Softwareentwickler mit einer tiefen Leidenschaft für Technologie und Innovation. 
-                    Mein Ziel ist es, durch kreative und effiziente Lösungen einen echten Mehrwert zu schaffen. 
-                    Mit einem fundierten Hintergrund in der Softwareentwicklung und einem starken Fokus auf Qualität und Benutzerfreundlichkeit 
-                    bringe ich Projekte von der Idee bis zur Umsetzung erfolgreich voran.
-                </p>
-                <p>
-                    Meine Expertise umfasst ein breites Spektrum an Technologien, darunter moderne Webentwicklung, mobile Anwendungen, 
-                    Backend-Systeme und IT-Sicherheit. Ich habe umfangreiche Erfahrung in der Arbeit mit agilen Methoden und bin stets bestrebt, 
-                    meine Fähigkeiten durch kontinuierliches Lernen und die Anwendung neuester Technologien zu erweitern.
-                </p>
-                <p>
-                    Neben meiner technischen Kompetenz lege ich großen Wert auf Teamarbeit, klare Kommunikation und die Förderung einer 
-                    positiven Arbeitskultur. Ich bin überzeugt, dass die besten Ergebnisse durch Zusammenarbeit und den Austausch von Ideen entstehen.
-                </p>
-                <p>
-                    Wenn Sie auf der Suche nach einem zuverlässigen und kreativen Entwickler sind, der Ihre Vision in die Realität umsetzt, 
-                    freue ich mich darauf, mit Ihnen zusammenzuarbeiten.
-                </p>
-            </div>
+      <!-- Sprachen -->
+      <language-skills slot="languages">
+        <div class="language-skill">
+          <span class="language-name">Deutsch</span>
+          <span class="language-level">Muttersprache</span>
         </div>
-    </section>
-
-    <section id="technologies" class="section-technologies">
-        <h2>Technologien & Fähigkeiten</h2>
-        <div class="tech-categories">
-            
-            <!-- Kategorie 1: Backend-Technologien -->
-            <div class="tech-category">
-                <h3>Backend-Entwicklung</h3>
-                <ul>
-                    <li><i class="fab fa-dotnet"></i> .NET (C#) - <span>Sehr gut</span></li>
-                    <li><i class="fab fa-linux"></i> Linux - <span>Sehr gut</span></li>
-                    <li><i class="fas fa-database"></i> MSSQL - <span>Fortgeschritten</span></li>
-                    <li><i class="fab fa-docker"></i> Docker - <span>Sehr gut</span></li>
-                </ul>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
-                <p class="progress-text">Erfahren (85%)</p>
-            </div>
-
-            <!-- Kategorie 2: Frontend-Technologien -->
-            <div class="tech-category">
-                <h3>Frontend-Entwicklung</h3>
-                <ul>
-                    <li><i class="fab fa-react"></i> React - <span>Experte</span></li>
-                    <li><i class="fab fa-js-square"></i> JavaScript (ES6+) - <span>Experte</span></li>
-                    <li><i class="fab fa-node"></i> Node.js - <span>Fortgeschritten</span></li>
-                    <li><i class="fab fa-css3-alt"></i> CSS3 & HTML5 - <span>Sehr gut</span></li>
-                    <li><i class="fas fa-hat-wizard"></i> Blazor - <span>Gut</span></li>
-                </ul>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-                <p class="progress-text">Experte (75%)</p>
-            </div>
-
-            <!-- Kategorie 3: Weitere Technologien -->
-            <div class="tech-category">
-                <h3>Weitere Technologien</h3>
-                <ul>
-                    <li><i class="fas fa-mobile-alt"></i> Android - <span>Erfahren</span></li>
-                    <li><i class="fas fa-cogs"></i> Unreal Engine 5 - <span>Gut</span></li>
-                    <li><i class="fas fa-hat-wizard"></i> Blazor - <span>Gut</span></li>
-                    <li><i class="fas fa-lock"></i> Cybersecurity - <span>Fortgeschritten</span></li>
-                </ul>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
-                <p class="progress-text">Fortgeschritten (70%)</p>
-            </div>
-
-            <!-- Sprachkenntnisse -->
-            <div class="tech-category">
-                <h3>Sprachkenntnisse</h3>
-                <ul class="language-list">
-                    <li>
-                        <span><i class="fas fa-language"></i> Deutsch</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 100%;"></div>
-                        </div>
-                        <p class="progress-text">Muttersprache</p>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-language"></i> Tamil</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 100%;"></div>
-                        </div>
-                        <p class="progress-text">Muttersprache</p>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-language"></i> Englisch</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-                        <p class="progress-text">B2</p>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-language"></i> Französisch</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%;"></div>
-                        </div>
-                        <p class="progress-text">Schulkenntnisse</p>
-                    </li>
-                </ul>
-            </div>
+        <div class="language-skill">
+          <span class="language-name">Englisch</span>
+          <span class="language-level">B2</span>
         </div>
-    </section>
-
-<!-- Projekte Sektion -->
-<section id="projects" class="section-projects">
-    <h2>Meine GitHub-Projekte</h2>
-    <div class="projects-container">
-    </div>
-</section>
-
-<!-- Werdegang Sektion -->
-<section id="career" class="section-career">
-    <h2>Mein Werdegang</h2>
-    <div class="career-timeline">
-
-        <!-- Beruflicher Werdegang -->
-        <div class="career-category">
-            <h3>Beruflicher Werdegang</h3>
-            <ul>
-                <li>
-                    <strong>Informatikspezialist</strong> bei <em>Bildungsplanung - Kanton Zürich</em> (2021 - heute)
-                    <p>Entwicklung und Optimierung von Web-Anwendungen und Backend-Systemen mit modernen Technologien wie Blazor und REST.</p>
-                    <p>Einsatz von Docker für Prototyping und Microservices sowie Wartung älterer Systeme (Webforms, Razor).</p>
-                    <p>Mitentwicklung von DevOps Prozessen.</p>
-                </li>
-                <li>
-                    <strong>Lehre als Applikations-Entwickler EFZ</strong> bei <em>GIA Informatik AG</em> (2017 - 2021)
-                    <p>Unterstützung bei der Entwicklung von Unternehmenssoftware und Durchführung von Code-Reviews.</p>
-                </li>
-            </ul>
+        <div class="language-skill">
+          <span class="language-name">Französisch</span>
+          <span class="language-level">Grundkenntnisse</span>
         </div>
+      </language-skills>
 
-        <!-- Weiterbildungen -->
-        <div class="career-category">
-            <h3>Weiterbildungen</h3>
-            <ul>
-                <li>
-                    <strong>Professional Scrum Master</strong> - <em>Digicomp Zürich</em> (2021)
-                    <p>Einstieg zum Professionellen Scrum Master im agilen Umfeld</p>
-                </li>
-            </ul>
-        </div>
+      <!-- Projekte -->
+      <projects-card title="Webentwicklung" slot="projects">
+        <project-item 
+          name="Portfolio-Website" 
+          description="Eine persönliche Portfolio-Website zur Präsentation meiner Projekte und Fähigkeiten."
+          link="https://mein-portfolio.com" 
+          tags="HTML, CSS, JavaScript">
+        </project-item>
+        <project-item 
+          name="E-Commerce-Plattform" 
+          description="Eine vollständige E-Commerce-Lösung mit Warenkorb und Zahlungsintegration."
+          link="https://ecommerce.com" 
+          tags="React, Node.js, MongoDB">
+        </project-item>
+      </projects-card>
 
-        <!-- Schulischer Werdegang -->
-        <div class="career-category">
-            <h3>Schulischer Werdegang</h3>
-            <ul>
-                <li>
-                    <strong>Lehre als Applikations-Entwickler EFZ</strong> - <em>Berufsschule Baden</em> (08/2017 - 07/2021)
-                    <p>Schwerpunkt auf Softwareentwicklung, Datenbanken und Algorithmen.</p>
-                </li>
-                <li>
-                    <strong>Schulische Grundausbildung</strong> - <em>Sarmenstorf AG</em> (08/2013 - 07/2017)
-                    <p>1. - 4. Klasse Sekundarstufe</p>
-                </li>
-                <li>
-                    <strong>Schulische Grundausbildung</strong> - <em>Meisterschwanden AG</em> (08/2012 - 07/2013)
-                    <p>1. Klasse Realschule</p>
-                </li>
-                <li>
-                    <strong>Schulische Grundausbildung</strong> - <em>Sarmenstorf AG</em> (08/2007 - 07/2012)
-                    <p>1. - 5. Klasse Primarschule</p>
-                </li>
-            </ul>
-        </div>
+      <!-- Werdegang -->
+      <career-timeline slot="career">
+        <career-category title="Beruflicher Werdegang">
+          <career-item 
+          title="Informatikspezialist" 
+          institution="Bildungsplanung - Kanton Zürich" 
+          date="2021 - heute">
+          Entwicklung und Optimierung von Web-Anwendungen und Backend-Systemen mit modernen Technologien wie Blazor und REST.<br>
+          Einsatz von Docker für Prototyping und Microservices sowie Wartung älterer Systeme (Webforms, Razor).<br>
+          Mitentwicklung von DevOps Prozessen.
+        </career-item>
+        </career-category>
+      </career-timeline>
+    </app-content>
+  </main>
 
-    </div>
-</section>
-
-    <!-- Call-to-Action -->
-    <section>
-        <div class="cta-buttons">
-            <a href="#contact" class="cta-button">Kontakt aufnehmen</a>
-            <a href="#about" class="cta-button">Mehr erfahren</a>
-        </div>
-    </section>
-
-    <!-- Kontakt Sektion -->
-    <section id="contact" class="section-contact">
-        <h2>Kontakt</h2>
-        <p>Sie können mich über die folgenden Kanäle erreichen:</p>
-        <div>
-            <p><strong>E-Mail:</strong> nivisanjeyananthan@duck.com</p>
-        </div>
-        <br>
-        <a href="mailto:nivisanjeyananthan@duck.com" class="btn-primary">Schreib mir eine E-Mail</a>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2025 Nivisan Jeyananthan. Alle Rechte vorbehalten.</p>
-    </footer>
-
-    <button class="dark-mode-toggle">🌙</button>
-
-    <script defer src="./src/script.js"></script>
+  <!-- Footer -->
+  <app-footer></app-footer>
 </body>
 </html>

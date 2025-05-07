@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Portfolio-Website",
+        "description": "Eine persönliche Portfolio-Website zur Präsentation meiner Projekte und Fähigkeiten.",
+        "link": "https://mein-portfolio.com",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "name": "E-Commerce-Plattform",
+        "description": "Eine vollständige E-Commerce-Lösung mit Warenkorb und Zahlungsintegration.",
+        "link": "https://ecommerce.com",
+        "tags": [
+            "React",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "name": "Puzzle-Spiel",
+        "description": "Ein innovatives Puzzle-Spiel mit herausfordernden Levels.",
+        "link": "https://puzzlespiel.com",
+        "tags": [
+            "Unity",
+            "C#",
+            "2D-Design"
+        ]
+    }
+]
