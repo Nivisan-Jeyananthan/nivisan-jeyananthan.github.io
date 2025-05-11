@@ -13,7 +13,7 @@ class CareerItem extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .career-item {
-          margin-bottom: 20px;
+          margin-bottom: 1.5rem;
         }
 
         .career-title {
@@ -26,7 +26,7 @@ class CareerItem extends HTMLElement {
         }
 
         .career-date {
-          font-size: 14px;
+          font-size: .9rem;
           color: #999;
         }
       </style>

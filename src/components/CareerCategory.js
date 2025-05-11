@@ -10,13 +10,13 @@ class CareerCategory extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .career-category {
-          margin-bottom: 40px;
+          margin-bottom: 2.3rem;
         }
 
         .career-category-title {
-          font-size: 18px;
+          font-size: 1.4rem;
           font-weight: bold;
-          margin-bottom: 15px;
+          margin-bottom: 0.9rem;
         }
       </style>
       <div class="career-category">

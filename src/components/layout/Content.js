@@ -8,13 +8,13 @@ class AppContent extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .content {
-          padding: 20px;
+          padding: 1.3rem;
           max-width: 1200px;
           margin: 0 auto;
         }
 
         section {
-          margin-bottom: 40px;
+          margin-bottom: 3rem;
         }
 
         section h2 {

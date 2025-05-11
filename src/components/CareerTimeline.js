@@ -8,9 +8,9 @@ class CareerTimeline extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .career-timeline {
-          padding: 20px;
+          padding: 1.3rem;
           border: 1px solid #ddd;
-          border-radius: 8px;
+          border-radius: 1rem;
           background-color: #f9f9f9;
         }
       </style>
