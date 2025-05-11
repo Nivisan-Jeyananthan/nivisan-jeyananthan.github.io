@@ -7,7 +7,7 @@ class AppAbout extends HTMLElement {
           <div class="about-content">
             <img src="${image}" alt="Profile Image">
             <div>
-              <h3><slot name="about-name">Your Name</slot></h3>
+              <h3><slot name="about-name"></slot></h3>
               <p><slot name="about-description"></slot></p>
               <slot name="about-extra-content"></slot>
             </div>

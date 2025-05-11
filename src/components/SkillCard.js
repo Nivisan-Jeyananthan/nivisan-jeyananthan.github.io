@@ -12,6 +12,7 @@ class SkillsCard extends HTMLElement {
           border-radius: 8px;
           padding: 20px;
           background-color: #fff;
+          margin: 0.6rem 0;
         }
       </style>
       <div class="skills-card">

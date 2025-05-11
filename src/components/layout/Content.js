@@ -33,7 +33,7 @@ class AppContent extends HTMLElement {
         <!-- About Section -->
         <section id="about">
           <h2>Über mich</h2>
-          <p>Hallo, mein Name ist Nivisan Jeyananthan. Ich bin ein leidenschaftlicher Softwareentwickler mit Fokus auf moderne Webtechnologien, Backend-Entwicklung und DevOps-Prozesse.</p>
+          <slot name="about"></slot>
         </section>
 
        <!-- Skills Section -->

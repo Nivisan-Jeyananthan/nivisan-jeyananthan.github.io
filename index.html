@@ -1,107 +1,169 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mein Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mein Portfolio</title>
 
-  <!-- Skripte -->
-  <script defer src="./src/script.js"></script>
+    <!-- Skripte -->
+    <script defer src="./src/script.js"></script>
 
-  <script defer src="./src/components/layout/Header.js"></script>
-  <script defer src="./src/components/layout/Footer.js"></script>
-  <script defer src="./src/components/layout/Navigation.js"></script>
-  <script defer src="./src/components/layout/Content.js"></script>
+    <script defer src="./src/components/layout/Header.js"></script>
+    <script defer src="./src/components/layout/Footer.js"></script>
+    <script defer src="./src/components/layout/Navigation.js"></script>
+    <script defer src="./src/components/layout/Content.js"></script>
 
-  <script defer src="./src/components/ExpirienceTimeline.js"></script>
-  <script defer src="./src/components/ExpirienceItem.js"></script>
+    <script defer src="./src/components/ExpirienceTimeline.js"></script>
+    <script defer src="./src/components/ExpirienceItem.js"></script>
 
-  <script defer src="./src/components/CareerCategory.js"></script>
-  <script defer src="./src/components/CareerItem.js"></script>
-  <script defer src="./src/components/CareerTimeline.js"></script>
+    <script defer src="./src/components/CareerCategory.js"></script>
+    <script defer src="./src/components/CareerItem.js"></script>
+    <script defer src="./src/components/CareerTimeline.js"></script>
 
+    <script defer src="./src/components/LanguageSkills.js"></script>
+    <script defer src="./src/components/SkillItem.js"></script>
+    <script defer src="./src/components/SkillCard.js"></script>
 
-  <script defer src="./src/components/LanguageSkills.js"></script>
-  <script defer src="./src/components/SkillItem.js"></script>
-  <script defer src="./src/components/SkillCard.js"></script>
+    <script defer src="./src/components/ProjectCard.js"></script>
+    <script defer src="./src/components/ProjectItem.js"></script>
 
-  <script defer src="./src/components/ProjectCard.js"></script>
-  <script defer src="./src/components/ProjectItem.js"></script>
-</head>
-<body>
-  <!-- Header -->
-  <app-header></app-header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <app-header></app-header>
 
-  <!-- Navigation -->
-  <app-navigation></app-navigation>
+    <!-- Navigation -->
+    <app-navigation></app-navigation>
 
-  <!-- Hauptinhalt -->
-  <main>
-    <app-content>
-      <!-- Fähigkeiten -->
-      <skills-card overall="85%" width="85%" slot="skills">
-        <skill-item name=".NET (C#)" level="Sehr gut" icon="fa-brands fa-microsoft"></skill-item>
-        <skill-item name="Linux" level="Sehr gut" icon="fa-brands fa-linux"></skill-item>
-        <skill-item name="MSSQL" level="Fortgeschritten" icon="fa-solid fa-database"></skill-item>
-        <skill-item name="Docker" level="Sehr gut" icon="fa-brands fa-docker"></skill-item>
-      </skills-card>
+    <!-- Hauptinhalt -->
+    <main>
+      <app-content>
+        <app-about
+          slot="about"
+          image="./assets/images/IMG_20250324_100558.jpg_compressed.JPEG"
+        >
+          <h3 >Hallo, Ich bin Nivisan Jeyananthan</h2>
+          <span slot="about-description">
+            Ich bin ein leidenschaftlicher Informatiker mit einem starken Fokus
+            auf Webentwicklung und Backend-Systeme. Mit meiner Ausbildung als
+            Informatiker EFZ und meiner aktuellen Tätigkeit als
+            Informatikspezialist bringe ich umfangreiche Kenntnisse in modernen
+            Technologien mit.
+          </p></app-about
+        >
 
-      <!-- Sprachen -->
-      <language-skills slot="languages">
-        <div class="language-skill">
-          <span class="language-name">Deutsch</span>
-          <span class="language-level">Muttersprache</span>
-        </div>
-        <div class="language-skill">
-          <span class="language-name">Englisch</span>
-          <span class="language-level">B2</span>
-        </div>
-        <div class="language-skill">
-          <span class="language-name">Französisch</span>
-          <span class="language-level">Grundkenntnisse</span>
-        </div>
-      </language-skills>
+        <!-- Fähigkeiten -->
+        <skills-card overall="85%" width="85%" slot="skills">
+          <skill-item
+            name=".NET (C#)"
+            level="Sehr gut"
+            icon="fa-brands fa-microsoft"
+          ></skill-item>
+          <skill-item
+            name="Linux"
+            level="Sehr gut"
+            icon="fa-brands fa-linux"
+          ></skill-item>
+          <skill-item
+            name="MSSQL"
+            level="Fortgeschritten"
+            icon="fa-solid fa-database"
+          ></skill-item>
+          <skill-item
+            name="Docker"
+            level="Sehr gut"
+            icon="fa-brands fa-docker"
+          ></skill-item>
+        </skills-card>
 
-      <!-- Projekte -->
-      <projects-card title="Webentwicklung" slot="projects">
-      </projects-card>
+            <!-- Fähigkeiten -->
+        <skills-card overall="85%" width="85%" slot="skills">
+          <skill-item
+            name=".NET (C#)"
+            level="Sehr gut"
+            icon="fa-brands fa-microsoft"
+          ></skill-item>
+          <skill-item
+            name="Linux"
+            level="Sehr gut"
+            icon="fa-brands fa-linux"
+          ></skill-item>
+          <skill-item
+            name="MSSQL"
+            level="Fortgeschritten"
+            icon="fa-solid fa-database"
+          ></skill-item>
+          <skill-item
+            name="Docker"
+            level="Sehr gut"
+            icon="fa-brands fa-docker"
+          ></skill-item>
+        </skills-card>
 
-      <!-- Werdegang -->
-      <career-timeline slot="career">
-        <career-category title="Beruflicher Werdegang">
-          <career-item 
-          title="Informatikspezialist" 
-          institution="Bildungsplanung - Kanton Zürich" 
-          date="2021 - heute">
-          Entwicklung und Optimierung von Web-Anwendungen und Backend-Systemen mit modernen Technologien wie Blazor und REST.<br>
-          Einsatz von Docker für Prototyping und Microservices sowie Wartung älterer Systeme (Webforms, Razor).<br>
-          Mitentwicklung von DevOps Prozessen.
-        </career-item>
-        <career-item 
-          title="Lehre als Informatiker EFZ" 
-          institution="GIA Informatik AG - Oftringen" 
-          date="2017 - 2021">
-          Entwicklung und Optimierung von Web-Anwendungen und Backend-Systemen mit modernen Technologien wie Blazor und REST.<br>
-          Einsatz von Docker für Prototyping und Microservices sowie Wartung älterer Systeme (Webforms, Razor).<br>
-          Mitentwicklung von DevOps Prozessen.
-        </career-item>
-        </career-category>
-        <career-category title="Weiterbildungen">
-          <career-item 
-          title="Scrum-Master" 
-          institution="" 
-          date="">
-          Entwicklung und Optimierung von Web-Anwendungen und Backend-Systemen mit modernen Technologien wie Blazor und REST.<br>
-          Einsatz von Docker für Prototyping und Microservices sowie Wartung älterer Systeme (Webforms, Razor).<br>
-          Mitentwicklung von DevOps Prozessen.
-        </career-item>
-        </career-category>
-      </career-timeline>
-    </app-content>
-  </main>
+        <!-- Sprachen -->
+        <language-skills slot="languages">
+          <div class="language-skill">
+            <span class="language-name">Deutsch</span>
+            <span class="language-level">Muttersprache</span>
+          </div>
+          <div class="language-skill">
+            <span class="language-name">Englisch</span>
+            <span class="language-level">B2</span>
+          </div>
+          <div class="language-skill">
+            <span class="language-name">Französisch</span>
+            <span class="language-level">Grundkenntnisse</span>
+          </div>
+        </language-skills>
 
-  <!-- Footer -->
-  <app-footer></app-footer>
-</body>
+        <!-- Projekte -->
+        <projects-card title="Webentwicklung" slot="projects"> </projects-card>
+
+        <!-- Werdegang -->
+        <career-timeline slot="career">
+          <career-category title="Beruflicher Werdegang">
+            <career-item
+              title="Informatikspezialist"
+              institution="Bildungsplanung - Kanton Zürich"
+              date="2021 - heute"
+            >
+              Entwicklung und Optimierung von Web-Anwendungen und
+              Backend-Systemen mit modernen Technologien wie Blazor und REST.<br />
+              Einsatz von Docker für Prototyping und Microservices sowie Wartung
+              älterer Systeme (Webforms, Razor).<br />
+              Mitentwicklung von DevOps Prozessen.
+            </career-item>
+            <career-item
+              title="Lehre als Informatiker EFZ"
+              institution="GIA Informatik AG - Oftringen"
+              date="2017 - 2021"
+            >
+              Entwicklung und Optimierung von Web-Anwendungen und
+              Backend-Systemen mit modernen Technologien wie Blazor und REST.<br />
+              Einsatz von Docker für Prototyping und Microservices sowie Wartung
+              älterer Systeme (Webforms, Razor).<br />
+              Mitentwicklung von DevOps Prozessen.
+            </career-item>
+          </career-category>
+          <career-category title="Weiterbildungen">
+            <career-item title="Scrum-Master" institution="" date="">
+              Entwicklung und Optimierung von Web-Anwendungen und
+              Backend-Systemen mit modernen Technologien wie Blazor und REST.<br />
+              Einsatz von Docker für Prototyping und Microservices sowie Wartung
+              älterer Systeme (Webforms, Razor).<br />
+              Mitentwicklung von DevOps Prozessen.
+            </career-item>
+          </career-category>
+        </career-timeline>
+      </app-content>
+    </main>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </body>
 </html>
