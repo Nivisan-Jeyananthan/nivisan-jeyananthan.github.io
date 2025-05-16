@@ -43,21 +43,26 @@
     <!-- Hauptinhalt -->
     <main>
       <app-content>
-        <app-about
-          slot="about"
-          image="./assets/images/IMG_20250324_100558.jpg_compressed.JPEG"
-        >
-          <h3 >Hallo, Ich bin Nivisan Jeyananthan</h2>
-          <span slot="about-description">
+        <app-about slot="about">
+          <h3 slot="about-name">Hallo, Ich bin Nivisan Jeyananthan</h3>
+          <p slot="about-description">
             Ich bin ein leidenschaftlicher Informatiker mit einem starken Fokus
             auf Webentwicklung und Backend-Systeme. Mit meiner Ausbildung als
             Informatiker EFZ und meiner aktuellen Tätigkeit als
             Informatikspezialist bringe ich umfangreiche Kenntnisse in modernen
             Technologien mit.
-          </p></app-about
-        >
+          </p>
+          <div slot="about-extra-content">
+            <a
+              href="https://github.com/nivisan"
+              target="_blank"
+              style="text-decoration: none; color: #0078d7; font-weight: bold"
+              >Mein GitHub-Profil</a
+            >
+          </div>
+        </app-about>
 
-        <!-- Fähigkeiten -->
+        <!-- Fähigkeiten Backend -->
         <skills-card overall="85%" width="85%" slot="skills">
           <skill-item
             name=".NET (C#)"
@@ -81,57 +86,164 @@
             color="#CC2927"
           ></skill-item>
           <skill-item
-            name="Docker"
+            name="NodeJS"
             level="Sehr gut"
-            icon="fa-brands fa-docker"
+            icon="fa-brands fa-node-js"
             progress="85"
-            color="#2496ED"
+            color="#8CC84B"
           ></skill-item>
         </skills-card>
 
-            <!-- Fähigkeiten -->
+        <!-- Fähigkeiten Frontend-->
         <skills-card overall="85%" width="85%" slot="skills">
           <skill-item
-            name=".NET (C#)"
-            level="Sehr gut"
+            name="ReactJS"
+            level="Experte"
+            icon="fa-brands fa-react"
+            progress="90"
+            color="#61DAFB"
+          ></skill-item>
+          <skill-item
+            name="JavaScript (ES6+)"
+            level="Experte"
+            icon="fa-brands fa-js"
+            progress="90"
+            color="#F7DF1E"
+          ></skill-item>
+          <skill-item
+            name="CSS3 & HTML5"
+            level="Experte"
+            icon="fa-brands fa-html5"
+            progress="90"
+            color="#E34F26"
+          ></skill-item>
+          <skill-item
+            name="Blazor"
+            level="Gut"
             icon="fa-brands fa-microsoft"
+            progress="50"
+            color="#0078D7"
+          ></skill-item>
+        </skills-card>
+
+        <!-- Fähigkeiten Weitere Technologien -->
+        <skills-card overall="85%" width="85%" slot="skills">
+          <skill-item
+            name="Docker"
+            level="Gut"
+            icon="fa-brands fa-docker"
+            progress="80"
+            color="#2496ED"
+          ></skill-item>
+          <skill-item
+            name="Git"
+            level="Gut"
+            icon="fa-brands fa-git-alt"
+            progress="80"
+            color="#F05032"
+          ></skill-item>
+          <skill-item
+            name="REST"
+            level="Gut"
+            icon="fa-solid fa-plug"
+            progress="80"
+            color="#0078D7"
+          ></skill-item>
+          <skill-item
+            name="Scrum"
+            level="Gut"
+            icon="fa-solid fa-sitemap"
+            progress="80"
+            color="#FF6F20"
+          ></skill-item>
+          <skill-item
+            name="CI/CD"
+            level="Gut"
+            icon="fa-solid fa-cogs"
+            progress="80"
+            color="#000"
+          ></skill-item>
+          <skill-item
+            name="Microservices"
+            level="Gut"
+            icon="fa-solid fa-cogs"
+            progress="80"
+            color="#ccc"
+          ></skill-item>
+          <skill-item
+            name="Webforms"
+            level="Gut"
+            icon="fa-solid fa-cogs"
+            progress="80"
+            color="#8CC84B"
+          ></skill-item>
+          <skill-item
+            name="Razor"
+            level="Gut"
+            icon="fa-solid fa-cogs"
+            progress="80"
+            color="#FF6F20"
+          ></skill-item>
+        </skills-card>
+
+        <!-- Fähigkeiten Softskills -->
+        <skills-card overall="85%" width="85%" slot="skills">
+          <skill-item
+            name="Teamarbeit"
+            level="Experte"
+            icon="fa-solid fa-users"
             progress="90"
             color="#0078D7"
           ></skill-item>
           <skill-item
-            name="Linux"
-            level="Sehr gut"
-            icon="fa-brands fa-linux"
-            progress="85"
-            color="#000000"
+            name="Kommunikation"
+            level="Experte"
+            icon="fa-solid fa-comments"
+            progress="90"
+            color="#0078D7"
           ></skill-item>
           <skill-item
-            name="MSSQL"
-            level="Fortgeschritten"
-            icon="fa-solid fa-database"
-            progress="75"
-            color="#CC2927"
+            name="Problemlösung"
+            level="Experte"
+            icon="fa-solid fa-lightbulb"
+            progress="90"
+            color="#0078D7"
           ></skill-item>
           <skill-item
-            name="Docker"
-            level="Sehr gut"
-            icon="fa-brands fa-docker"
-            progress="85"
-            color="#2496ED"
+            name="Kreativität"
+            level="Experte"
+            icon="fa-solid fa-paintbrush"
+            progress="90"
+            color="#0078D7"
           ></skill-item>
         </skills-card>
 
         <!-- Sprachen -->
         <language-skills slot="languages">
-          <div class="language-skill" progress="100" color="#0078D7" icon="fa-solid fa-flag">
+          <div
+            class="language-skill"
+            progress="100"
+            color="#0078D7"
+            icon="fa-solid fa-flag"
+          >
             <span class="language-name">Deutsch</span>
             <span class="language-level">Muttersprache</span>
           </div>
-          <div class="language-skill" progress="80" color="#2496ED" icon="fa-solid fa-language">
+          <div
+            class="language-skill"
+            progress="80"
+            color="#2496ED"
+            icon="fa-solid fa-language"
+          >
             <span class="language-name">Englisch</span>
             <span class="language-level">B2</span>
           </div>
-          <div class="language-skill" progress="50" color="#CC2927" icon="fa-solid fa-globe">
+          <div
+            class="language-skill"
+            progress="50"
+            color="#CC2927"
+            icon="fa-solid fa-globe"
+          >
             <span class="language-name">Französisch</span>
             <span class="language-level">Grundkenntnisse</span>
           </div>

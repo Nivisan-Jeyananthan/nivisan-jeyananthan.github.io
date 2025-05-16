@@ -32,7 +32,7 @@ class AppContent extends HTMLElement {
       <div class="content">
         <!-- About Section -->
         <section id="about">
-          <h2>Über mich</h2>
+          
           <slot name="about"></slot>
         </section>
 
