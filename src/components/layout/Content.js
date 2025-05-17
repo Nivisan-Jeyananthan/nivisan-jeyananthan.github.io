@@ -32,33 +32,32 @@ class AppContent extends HTMLElement {
       <div class="content">
         <!-- About Section -->
         <section id="about">
-          
           <slot name="about"></slot>
         </section>
 
-       <!-- Skills Section -->
+        <!-- Skills Section -->
         <section id="skills">
           <h2>Fähigkeiten</h2>
           <slot name="skills"></slot>
         </section>
 
-      <section id="languages">
-        <h2>Sprachen</h2>
-        <slot name="languages"></slot>
-      </section>
+        <section id="languages">
+          <h2>Sprachen</h2>
+          <slot name="languages"></slot>
+        </section>
 
         <!-- Projects Section -->
-      <section id="projects">
+        <section id="projects">
           <h2>Projekte</h2>
           <slot name="projects"></slot>
         </section>
-      </div>
 
-      <!-- Career Section -->
-      <section id="career">
-        <h2>Werdegang</h2>
-        <slot name="career"></slot>
-      </section>
+        <!-- Career Section (jetzt eingerahmt wie die anderen Bereiche) -->
+        <section id="career">
+          <h2>Werdegang</h2>
+          <slot name="career"></slot>
+        </section>
+      </div>
     `;
   }
 }

@@ -10,23 +10,22 @@
         ]
     },
     {
-        "name": "E-Commerce-Plattform",
-        "description": "Eine vollständige E-Commerce-Lösung mit Warenkorb und Zahlungsintegration.",
-        "link": "https://ecommerce.com",
+        "name": "FunnyChat",
+        "description": "Eine kleine C#, WPF Anwendung, um Designs in WPF darzustellen.",
+        "link": "https://github.com/Nivisan-Jeyananthan/FunnyChat",
         "tags": [
-            "React",
-            "Node.js",
-            "MongoDB"
+            "C#",
+            "WPF"
         ]
     },
     {
-        "name": "Puzzle-Spiel",
-        "description": "Ein innovatives Puzzle-Spiel mit herausfordernden Levels.",
-        "link": "https://puzzlespiel.com",
+        "name": "Todo-App",
+        "description": "Eine kleine TodoApp, die mit ReactJS gemacht wurde und mittels einer kleinen Pipeline als Docker image hochgeladen wird.",
+        "link": "https://github.com/Nivisan-Jeyananthan/TodoApp",
         "tags": [
-            "Unity",
-            "C#",
-            "2D-Design"
+            "Docker",
+            "React",
+            "Node.js"
         ]
     }
 ]
