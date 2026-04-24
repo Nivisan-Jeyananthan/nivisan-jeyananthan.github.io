@@ -50,7 +50,7 @@ const projects = [
   },
   {
     name: "Rain",
-    description: "Ein 2D Topdown Spiel in Java ohne Hilfsbibliotheken.",
+    description: "Eine Ansammlung von Schritten zu einem Spiel mit einer eigenen Gameengine in Java.",
     githubLink: "https://github.com/Nivisan-Jeyananthan/Rain",
     githubIcon: "fab fa-github",
   },
